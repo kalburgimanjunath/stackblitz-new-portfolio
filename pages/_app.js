@@ -1,10 +1,14 @@
 import '../styles/globals.css';
-import { Header } from '../components/';
+import { Header, Footer } from '../components/';
 function MyApp({ Component, pageProps }) {
+  const email = 'manjunathkalburgi@gmail.com';
   return (
-    <div className="container mx-auto px-5 max-w-screen-lg">
-      <Header />
-      <Component {...pageProps} />
+    <div className="">
+      <div className="container mx-auto px-5 max-w-screen-lg">
+        <Header />
+        <Component {...pageProps} />
+      </div>
+      <Footer email={email} />
     </div>
   );
 }

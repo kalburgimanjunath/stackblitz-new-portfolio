@@ -3,7 +3,7 @@ export default function Portfolio({ title, projects }) {
   return (
     <>
       <div className="text-center text-4xl mb-5">{title}</div>
-      <div className="text-center flex grid grid-cols-2">
+      <div className="text-center flex grid grid-cols-4">
         {projects &&
           projects.map((item) => {
             return (
@@ -11,9 +11,7 @@ export default function Portfolio({ title, projects }) {
                 <div>
                   <img
                     src="https://picsum.photos/seed/picsum/200/300"
-                    className="rounded-[30px] w-full"
-                    height={300}
-                    width={250}
+                    className="rounded-[30px] w-90 h-90"
                   />
                 </div>
                 <div className="m-5">{item.title}</div>

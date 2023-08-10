@@ -23,7 +23,7 @@ export default function Home() {
       description: 'description',
     },
   ];
-  const email = 'manjunathkalburgi@gmail.com';
+
   return (
     <div className="">
       <Hero title="Hi! My name is Manjunath Kalburgi Please call me Manju 😊">
@@ -33,7 +33,6 @@ export default function Home() {
       </Hero>
 
       <Portfolio projects={projects} title="My Work" />
-      <Footer email={email} />
     </div>
   );
 }
