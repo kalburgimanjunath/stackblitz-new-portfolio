@@ -27,9 +27,7 @@ export default function Home() {
   return (
     <div className="">
       <Hero title="Hi! My name is Manjunath Kalburgi Please call me Manju 😊">
-        <button className="rounded-lg p-3 bg-blue-300 text-white hover:bg-blue-500">
-          Contact me
-        </button>
+        <button className="primary-button">Contact me</button>
       </Hero>
 
       <Portfolio projects={projects} title="My Work" />
