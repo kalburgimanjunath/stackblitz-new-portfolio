@@ -4,22 +4,22 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: 'hello world',
+      title: 'belk-redesign-case-study',
       description: 'description',
     },
     {
       id: 2,
-      title: 'hello world',
+      title: 'tumareliye-freelance-project',
       description: 'description',
     },
     {
       id: 3,
-      title: 'hello world',
+      title: 'iterateux-website-redesign-case-study',
       description: 'description',
     },
     {
       id: 4,
-      title: 'hello world',
+      title: 'fitly-app-update-case-study',
       description: 'description',
     },
   ];
