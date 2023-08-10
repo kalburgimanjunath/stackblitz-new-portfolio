@@ -25,12 +25,14 @@ export default function Home() {
   ];
   const email = 'manjunathkalburgi@gmail.com';
   return (
-    <div>
+    <div className="">
       <Hero title="Hi! My name is Manjunath Kalburgi Please call me Manju 😊">
-        <button>Contact me</button>
+        <button className="rounded-lg p-3 bg-blue-300 text-white hover:bg-blue-500">
+          Contact me
+        </button>
       </Hero>
-      <h1>My Work</h1>
-      <Portfolio projects={projects} />
+
+      <Portfolio projects={projects} title="My Work" />
       <Footer email={email} />
     </div>
   );
