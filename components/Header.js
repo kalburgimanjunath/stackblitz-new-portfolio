@@ -7,7 +7,7 @@ export default function Header() {
   ];
   return (
     <div className="flex">
-      <Link href={`/`} className="text-blue-300 font-regular p-5 w-full">
+      <Link href={`/`} className="text-blue-300 font-regular p-5 pl-0 w-full">
         Manjunath Kalburgi
       </Link>
       <div className="flex justify-end w-full">
@@ -16,7 +16,7 @@ export default function Header() {
             return (
               <Link
                 href={item.link}
-                className="text-blue-300 font-regular hover:text-blue-500 p-5 hover:rounded-lg hover:bg-pink-300 hover:text-white"
+                className="text-blue-300 font-regular hover:text-blue-500 p-5 hover:rounded-lg hover:bg-pink-300 hover:text-white "
               >
                 {item.title}
               </Link>
