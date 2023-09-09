@@ -4,7 +4,9 @@ export default function Header() {
     { title: 'Contact', link: 'contact' },
     { title: 'About', link: 'about' },
     { title: 'Work', link: '#' },
+    { title: 'Articles', link: 'posts' },
   ];
+
   return (
     <div className="flex">
       <Link href={`/`} className="text-blue-300 font-regular p-5 pl-0 w-full">
