@@ -25,7 +25,7 @@ export default function index() {
   ];
   return (
     <div>
-      {articles &&
+      {/* {articles &&
         articles.map((item) => {
           return (
             <>
@@ -33,7 +33,7 @@ export default function index() {
               <div className="text-2xs">{item.description}</div>
             </>
           );
-        })}
+        })} */}
       <Post1 />
       <Post2 />
     </div>
