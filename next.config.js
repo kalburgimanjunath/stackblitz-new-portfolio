@@ -1,4 +1,7 @@
 // next.config.js
+module.export = {
+  swcMinify: false,
+};
 
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,

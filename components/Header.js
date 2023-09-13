@@ -8,8 +8,8 @@ export default function Header() {
   ];
 
   return (
-    <div className="flex">
-      <Link href={`/`} className="text-blue-300 font-regular p-5 pl-0 w-full">
+    <div className="flex fixed top-0 bg-white shadow-lg">
+      <Link href={`/`} className="text-blue-300 font-regular p-5  w-full">
         Manjunath Kalburgi
       </Link>
       <div className="flex justify-end w-full">
