@@ -1,5 +1,6 @@
 import Post1 from './post1.mdx';
 import Post2 from './post2.mdx';
+import Link from 'next/link';
 export default function index() {
   const articles = [
     {
@@ -24,18 +25,18 @@ export default function index() {
     },
   ];
   return (
-    <div>
-      {/* {articles &&
+    <div className='m-20'>
+      {articles &&
         articles.map((item) => {
           return (
-            <>
+            <Link href={`../posts/${item.title}`}>
               <div className="font-bold text-3xl">{item.title}</div>
               <div className="text-2xs">{item.description}</div>
-            </>
+            </Link>
           );
-        })} */}
-      <Post1 />
-      <Post2 />
+        })}
+      {/* <Post1 />
+      <Post2 /> */}
     </div>
   );
 }

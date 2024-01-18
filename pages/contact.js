@@ -33,12 +33,12 @@ export default function contact() {
           <div>
             <div>Message</div>
             <div>
-              <textarea rows="10" cols="20" className="w-full" />
+              <textarea rows="5" cols="20" className="w-full" />
             </div>
           </div>
         </div>
         <div>
-          <button className="primary-button" type="button">
+          <button className="primary-button" type="submit">
             Send
           </button>
         </div>

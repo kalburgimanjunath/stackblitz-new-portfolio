@@ -3,7 +3,7 @@ export default function Header() {
   const menus = [
     { title: 'Contact', link: 'contact' },
     { title: 'About', link: 'about' },
-    { title: 'Work', link: '#' },
+    { title: 'Work', link: 'projects' },
     { title: 'Articles', link: 'posts' },
   ];
 
@@ -17,7 +17,7 @@ export default function Header() {
           menus.map((item) => {
             return (
               <Link
-                href={item.link}
+                href={`../${item.link}`}
                 className="text-blue-300 font-regular hover:text-blue-500 p-5 hover:rounded-lg hover:bg-pink-300 hover:text-white "
               >
                 {item.title}

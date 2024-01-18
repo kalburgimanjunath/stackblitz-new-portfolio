@@ -1,9 +1,9 @@
-// import Project1 from './post1.mdx';
+import Post1 from './post1.mdx';
+import Post2 from './post2.mdx';
 import { useRouter } from 'next/router';
 export default function index() {
   const router = useRouter();
   const { title } = router.query;
-  console.log(title);
   const projects = [
     {
       id: 1,
@@ -31,13 +31,12 @@ export default function index() {
     projects.filter((item) => {
       return item.title == title;
     });
-  console.log(filteredProject);
 
   return (
-    <div>
+    <div className='m-20'>
       {projects &&
         projects.map((item) => {
-          return <div>{item.title}</div>;
+          return item.title===title? <>{title}<Post1/></> : <Post2/>
         })}
     </div>
   );
