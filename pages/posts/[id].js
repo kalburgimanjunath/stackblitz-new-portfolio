@@ -1,4 +1,4 @@
-import Project1 from './project1.mdx';
+// import Project1 from './post1.mdx';
 import { useRouter } from 'next/router';
 export default function index() {
   const router = useRouter();
